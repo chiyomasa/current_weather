@@ -25,7 +25,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   void getData() async {
     Response response = await get(
-        'https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=e00ae0394e52abd97c0b823e83e6ffd2');
+        'https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid={APIKey}');
     print(response);
   }
 
